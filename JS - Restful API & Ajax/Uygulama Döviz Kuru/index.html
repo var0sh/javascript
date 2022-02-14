@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Exchange Rate</title>
+</head>
+
+<body class="bg-secondary text-center">
+
+    <div class="container pt-5 text-center">
+        <div class="row mb-5 justify-content-center">
+
+            <div class="col-md-9">
+                <div class="row mb-5">
+                    <div class="col-md-5">
+                        <select class="form-select form-select-sm" id="selectOne">
+                            <option selected value=" ">Select Unit</option>
+                            <option value="TRY">TRY</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+                    </div>
+                    <label class="col-md-1">TO</label>
+                    <div class="col-md-5">
+                        <select class="form-select form-select-sm" id="selectTwo">
+                            <option selected value=" ">Select Unit</option>
+                            <option value="TRY">TRY</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-5">
+                        <div class="input-group mb-3">
+                            <input id="fromInput" type="text" class="form-control">
+                            <span id="from" class="input-group-text bg-warning"></span>
+                            <input id="atInput" type="text" class="form-control" disabled>
+                            <span id="at" class="input-group-text bg-warning"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <button id="convertBtn" type="button" class="mb-5 btn btn-primary">Convert</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="alert" class="col-md-3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="exchange-rate.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+{
+    "employees" : [
+        {"firstName" : "Furkan", "lastName" : "Akçatepe", "age" : 18, "retired" : false},
+        {"firstName" : "Halil", "lastName" : "Akçatepe", "age" : 40, "retired" : false},
+        {"firstName" : "Ayşe", "lastName" : "Akçatepe", "age" : 38, "retired" : false},
+        {"firstName" : "Taha", "lastName" : "Akçatepe", "age" : 11, "retired" : false}
+    ]
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../CDN/jquery-3.6.0.min.js"></script>
+    <script>
+    </script>
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 180%;
+            box-sizing: border-box;
+        }
+
+        input {
+            padding: 15px;
+            font-size: 25px;
+            border-radius: 5px;
+            border: 1px solid grey;
+            width: 442px;
+        }
+
+        label {
+            display: inline-block;
+            width: 210px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 14px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        #wrapper {
+            width: 700px;
+            margin: 0 auto;
+        }
+
+        #error {
+            color: red;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="error"></div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Please enter your mail.">
+        </div>
+        <div class="form-group">
+            <label for="phone">Telefon</label>
+            <input type="text" name="phone" id="phone" placeholder="Please enter your phone.">
+        </div>
+        <div class="form-group">
+            <label for="password">Parola</label>
+            <input type="password" name="password" id="password" placeholder="Please enter your password.">
+        </div>
+        <div class="form-group">
+            <label for="repassword">Parola Tekrar</label>
+            <input type="password" name="repassword" id="repassword" placeholder="Please enter your repassword.">
+        </div>
+
+        <button id="btn">Kaydet</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
